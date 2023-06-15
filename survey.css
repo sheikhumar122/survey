@@ -1,0 +1,104 @@
+/* survey.css */
+
+/* Add general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the welcome screen */
+  #welcomeScreen {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(242, 131, 131);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: solid black 3px;
+    background-color: white;
+    color:black ;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  /* Style the survey container */
+  #surveyContainer {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 600px;
+    width: 90%;
+  }
+  
+  #questionNumber {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  #question {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #answerContainer {
+    margin-bottom: 20px;
+  }
+  
+  input[type="radio"],
+  textarea {
+    margin-bottom: 10px;
+  }
+  
+  /* Style the navigation buttons */
+  #previousButton,
+  #nextButton,
+  #skipButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    border: solid black 3px;
+    background-color: white;
+    color:black ;
+    border-radius: 50%;
+  }
+  
+  #previousButton {
+    display: none;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    #questionNumber {
+      font-size: 24px;
+    }
+  
+    #question {
+      font-size: 18px;
+    }
+  }
+  
